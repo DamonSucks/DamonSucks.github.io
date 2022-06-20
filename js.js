@@ -42,13 +42,14 @@ const countDown = new Date(birthday).getTime(),
 let musics = [
     "想着你.mp3", "勇气.mp3", "红.mp3", "Light.mp3", "指纹.mp3", "耿.mp3", "这世界那么多人.mp3", "小雨天气.mp3", "迷宫.mp3", "乌云中.mp3", "这世界喧闹，你我相遇正好.mp3", "If I.mp3", "星球坠落.mp3"
 ];
-let index = 0;
+let index = Math.floor(Math.random() * musics.length);;
 let player;
 window.onload = function () {
     player = document.getElementById("player");
     player.src = musics[index];
     player.onended = function () {
-        player.src = musics[++index % musics.length];
+        index = Math.floor(Math.random() * musics.length);
+        player.src = musics[index];
         player.play();
     }
 }
