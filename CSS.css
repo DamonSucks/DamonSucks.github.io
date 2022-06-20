@@ -1,0 +1,233 @@
+audio{
+    width:100%;
+    display: table;
+}
+
+.container3 {
+    display: none;
+}
+
+:root {
+    --smaller: .75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #ffd54f;
+    display: flex;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.firework {
+    display: none;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+[class^=firework-] {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 80%;
+}
+
+.firework-1 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.2s;
+    top: 45%;
+    left: 45%;
+}
+
+.firework-2 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.3s;
+    top: 20%;
+    left: 60%;
+}
+
+.firework-3 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.4s;
+    top: 20%;
+    left: 75%;
+}
+
+.firework-4 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 1.4s;
+    top: 65%;
+    left: 50%;
+}
+
+.firework-5 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.5s;
+    top: 60%;
+    left: 50%;
+}
+
+.firework-6 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 0.8s;
+    top: 80%;
+    left: 70%;
+}
+
+.firework-7 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.5s;
+    top: 85%;
+    left: 65%;
+}
+
+.firework-8 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 1.5s;
+    top: 65%;
+    left: 55%;
+}
+
+.firework-9 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.6s;
+    top: 20%;
+    left: 15%;
+}
+
+.firework-10 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 0.8s;
+    top: 45%;
+    left: 85%;
+}
+
+.firework-11 {
+    animation: firework-md 1.2s both infinite;
+    animation-delay: 1.2s;
+    top: 25%;
+    left: 15%;
+}
+
+.firework-12 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 1.5s;
+    top: 90%;
+    left: 50%;
+}
+
+.firework-13 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 1.3s;
+    top: 55%;
+    left: 85%;
+}
+
+.firework-14 {
+    animation: firework-md 1.2s both infinite;
+    animation-delay: 0.2s;
+    top: 35%;
+    left: 35%;
+}
+
+.firework-15 {
+    animation: firework-md 1.2s both infinite;
+    animation-delay: 0.8s;
+    top: 45%;
+    left: 85%;
+}
+
+@keyframes firework-sm {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 70% {
+        opacity: 1;
+    }
+    100% {
+        box-shadow: -0.5rem 0 0 #fff, 0.5rem 0 0 #fff, 0 -0.5rem 0 #fff, 0 0.5rem 0 #fff, 0.35rem -0.35rem 0 #fff, 0.35rem 0.35rem 0 #fff, -0.35rem -0.35rem 0 #fff, -0.35rem 0.35rem 0 #fff;
+    }
+}
+@keyframes firework-md {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 70% {
+        opacity: 1;
+    }
+    100% {
+        box-shadow: -0.7rem 0 0 #fff, 0.7rem 0 0 #fff, 0 -0.7rem 0 #fff, 0 0.7rem 0 #fff, 0.49rem -0.49rem 0 #fff, 0.49rem 0.49rem 0 #fff, -0.49rem -0.49rem 0 #fff, -0.49rem 0.49rem 0 #fff;
+    }
+}
+@keyframes firework-lg {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 70% {
+        opacity: 1;
+    }
+    100% {
+        box-shadow: -0.9rem 0 0 #fff, 0.9rem 0 0 #fff, 0 -0.9rem 0 #fff, 0 0.9rem 0 #fff, 0.63rem -0.63rem 0 #fff, 0.63rem 0.63rem 0 #fff, -0.63rem -0.63rem 0 #fff, -0.63rem 0.63rem 0 #fff;
+    }
+}
+
