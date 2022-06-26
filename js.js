@@ -8,7 +8,7 @@ let today = new Date(),
     mm = String(today.getMonth() + 1).padStart(2, "0"),
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
-    dayMonth = "06/26/",
+    dayMonth = "07/01/",
     birthday = dayMonth + yyyy;
 
 today = mm + "/" + dd + "/" + yyyy;
