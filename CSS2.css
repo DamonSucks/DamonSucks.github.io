@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #ee9ca7;
+}
+
+#cake {
+    display: block;
+    position: relative;
+    margin: 2em auto 0 auto;
+}
+
+/* ============================================== Candle
+*/
+
+.velas {
+    background: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    margin-left: 10px;
+    margin-top: -8.33333333px;
+    width: 5px;
+    height: 35px;
+    transform: translateY(-300px);
+    backface-visibility: hidden;
+    animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+    background: rgba(255, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.22222222px;
+}
+.velas:after {
+    top: 25%;
+    left: 0;
+}
+.velas:before {
+    top: 45%;
+    left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.fuego {
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -2.6px;
+    width: 6.66666667px;
+    height: 18px;
+}
+.fuego:nth-child(1) {
+    animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+    animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+    animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+    animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+    animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes fuego {
+    0%, 100% {
+        background: rgba(254, 248, 97, 0.5);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        transform: translateY(-20px) scale(0);
+    }
+}
+
+@keyframes in {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.text {
+    color: #8b6a60;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style:italic;
+    text-align: center;
+    top: 50px;
+}
+h1 {
+    font-size: 1.4em;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+[class^=firework-] {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 80%;
+}
+
+.firework-1 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.2s;
+    top: 15%;
+    left: 5%;
+}
+
+.firework-2 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.3s;
+    top: 20%;
+    left: 60%;
+}
+
+.firework-3 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.4s;
+    top: 20%;
+    left: 75%;
+}
+
+.firework-4 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 1.4s;
+    top: 15%;
+    left: 40%;
+}
+
+.firework-5 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.5s;
+    top: 5%;
+    left: 30%;
+}
+
+.firework-6 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 0.8s;
+    top: 8%;
+    left: 70%;
+}
+
+.firework-7 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.5s;
+    top: 8%;
+    left: 65%;
+}
+
+.firework-8 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 1.5s;
+    top: 25%;
+    left: 55%;
+}
+
+.firework-9 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 0.6s;
+    top: 20%;
+    left: 15%;
+}
+
+.firework-10 {
+    animation: firework-sm 1.2s both infinite;
+    animation-delay: 0.8s;
+    top: 35%;
+    left: 85%;
+}
+
+.firework-11 {
+    animation: firework-md 1.2s both infinite;
+    animation-delay: 1.2s;
+    top: 15%;
+    left: 15%;
+}
+
+.firework-12 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 1.5s;
+    top: 10%;
+    left: 50%;
+}
+
+.firework-13 {
+    animation: firework-lg 1.2s both infinite;
+    animation-delay: 1.3s;
+    top: 15%;
+    left: 85%;
+}
+
+.firework-14 {
+    animation: firework-md 1.2s both infinite;
+    animation-delay: 0.2s;
+    top: 35%;
+    left: 35%;
+}
+
+.firework-15 {
+    animation: firework-md 1.2s both infinite;
+    animation-delay: 0.8s;
+    top: 10%;
+    left: 85%;
+}
+
+@keyframes firework-sm {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 70% {
+        opacity: 1;
+    }
+    100% {
+        box-shadow: -0.5rem 0 0 #fff, 0.5rem 0 0 #fff, 0 -0.5rem 0 #fff, 0 0.5rem 0 #fff, 0.35rem -0.35rem 0 #fff, 0.35rem 0.35rem 0 #fff, -0.35rem -0.35rem 0 #fff, -0.35rem 0.35rem 0 #fff;
+    }
+}
+@keyframes firework-md {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 70% {
+        opacity: 1;
+    }
+    100% {
+        box-shadow: -0.7rem 0 0 #fff, 0.7rem 0 0 #fff, 0 -0.7rem 0 #fff, 0 0.7rem 0 #fff, 0.49rem -0.49rem 0 #fff, 0.49rem 0.49rem 0 #fff, -0.49rem -0.49rem 0 #fff, -0.49rem 0.49rem 0 #fff;
+    }
+}
+@keyframes firework-lg {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 70% {
+        opacity: 1;
+    }
+    100% {
+        box-shadow: -0.9rem 0 0 #fff, 0.9rem 0 0 #fff, 0 -0.9rem 0 #fff, 0 0.9rem 0 #fff, 0.63rem -0.63rem 0 #fff, 0.63rem 0.63rem 0 #fff, -0.63rem -0.63rem 0 #fff, -0.63rem 0.63rem 0 #fff;
+    }
+}
+
+audio{
+    width:18%;
+    left: 0;
+    display: table;
+}
+
